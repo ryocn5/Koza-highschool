@@ -1,0 +1,435 @@
+
+/*------------------------------------------------------------------------
+全体構造
+-------------------------------------------------------------------------- */
+body{
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  width: 1100px;
+  margin: 0 auto 0 auto;
+}
+
+.page{
+  width: 1100px;
+  margin: 0 auto 0 auto;
+}
+/* トップへ戻るボタン */
+.back-top {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  display: none;
+ }
+ .back-top i{
+  font-size: 30px;
+  background-color:#8DC031;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #ccc;
+}
+
+.contents{
+  margin-bottom: 150px ;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-right: 20px;
+}
+
+/*------------------------------------------------------------------------
+ヘッダー
+-------------------------------------------------------------------------- */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu{
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+header li a{
+  display: block;
+  text-decoration: none;
+  color:#000000;
+  padding: 10px 20px 10px 20px;
+}
+
+
+
+/*------------------------------------------------------------------------
+ホーム　メイン
+-------------------------------------------------------------------------- */
+
+
+#home .top-image{
+  margin-bottom: 50px;
+}
+
+#home .contents .main-page h1{
+  padding-left: 30px;
+  letter-spacing: 0.12em;
+  font-size: 30px ;
+  color: #707070;
+  margin-bottom: 10px;
+}
+#home .contents .main-page h1::after{
+  content: "";
+  display: block;
+  width: 40px;
+ border-bottom: 3px solid #235910;
+ padding-top: 5px;
+ margin-left: -10px;
+
+}
+
+
+#home .contents .main-page{
+  width: 600px; 
+}
+#home .contents .main-page ul{
+  list-style-type: none;
+  margin: 50px;
+}
+#home .contents .main-page li{
+  line-height: 1.8;
+  margin-bottom: 20px;
+  border-bottom: 1px dotted #707070;
+  font-size: 20px;
+  padding-left: 10px;
+}
+#home .contents .main-page li time{
+  color:  #8DC031
+}
+/*------------------------------------------------------------------------
+サイド
+-------------------------------------------------------------------------- */
+
+.contents aside{
+  width: 430px;
+  margin-top: 10px;
+}
+.contents aside .events{
+  margin-bottom: 30px;
+  position: relative;
+}
+.contents aside .events span{
+ background-color: #8DC031;
+ color: #ffffff;
+ padding: 10px;
+ position: absolute;
+ top: -20px;
+}
+
+.contents aside .events img{
+  margin-left: 10px;  
+}
+
+.contents aside .map span{
+  background-color: #8DC031;
+  color: #ffffff;
+  padding: 10px; 
+}
+.contents aside .map iframe {
+  margin-left: 10px;
+}
+
+.contents aside .map{
+  margin-bottom: 20px;
+  position: relative;
+}
+.contents aside .map span{
+  position: absolute;
+  top: -20px;
+}
+.contents aside .facebook{
+  text-align: center;
+
+}
+/*------------------------------------------------------------------------
+フッター
+-------------------------------------------------------------------------- */
+
+footer{
+  height: 200px;
+  background-color:#235910 ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+footer img{
+  margin-bottom: 10px;
+}
+footer small p{
+  color: #ffffff;
+  font-size: 10px;
+}  
+ 
+footer p{
+  text-align: center;
+  color: #ffffff;
+  border-bottom: 20px;
+}
+/*------------------------------------------------------------------------
+学校紹介　学生生活　トップ画面
+-------------------------------------------------------------------------- */
+.next-page{
+  margin-bottom: 80px;
+}
+.next-image{
+  margin-left: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  
+}
+.tag{
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 330px;
+}
+.big-tag{
+  background-color: #8DC031;
+  color: #ffffff;
+  padding:10px 50px 10px 50px;
+  font-size: 30px;
+ 
+ 
+}
+.small-tag{
+  background-color: #8DC031;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+}
+/*------------------------------------------------------------------------
+学校紹介　メイン
+-------------------------------------------------------------------------- */
+.text{
+  margin-bottom: 60px;
+}
+.text h1{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+.text p{
+  text-indent: 1em;
+  line-height: 1.8;
+}
+.contents .main-page01{
+  width: 590px;
+
+}
+.contents .main-page01 h1{
+  font-size: 30px;
+  color: #707070;
+  margin-bottom: 20px;
+}
+.contents .main-page01 h1::after{
+  content: "";
+  display: block;
+  width: 40px;
+ border-bottom: 3px solid #235910;
+ padding-top: 5px;
+ margin-left: -10px;
+}
+
+#about .principle img{
+  float:left;
+  margin-right: 20px;
+}
+#about .principle p{
+  line-height: 1.7;
+  text-indent: 1em;
+  padding-right: 20px;
+
+}
+
+/* 校訓 */
+#about .policy h2{
+  font-size: 30px;
+  text-align: center; 
+  margin-bottom: 60px;
+ 
+}
+#about .policy h2::after{
+  content: "";
+  display: block;
+  width: 60px;
+ border-bottom: 3px solid #235910;
+ padding-top: 10px;
+ margin: auto;
+}
+#about .policy{
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin-bottom: 150px;
+  background-color: #f3f3f3;
+  padding: 30px 0 50px 0;
+  width:calc(100vw - 20px);
+  margin-left: calc(calc(100vw - 1120px) / -2);
+
+}
+
+#about .three{
+  display: flex;
+  justify-content: space-around;
+  width: 900px;
+  margin: 0 auto;
+}
+#about .circle{
+  width: 170px;
+  
+}
+#about .circle p{
+  margin: 20px 10px 10px 10px;
+  line-height: 1.7;
+
+}
+/*------------------------------------------------------------------------
+学校生活　メイン
+-------------------------------------------------------------------------- */
+/* 年間行事 */
+#info .main-page01 table{
+  width: 400px;
+  border: 1px solid #000000;
+  font-size: 16px;
+  margin: 30px 0 0 20px;
+}
+
+#info .main-page01 th{
+  height: 70px;
+  font-size: 20px;
+  font-weight: normal;
+  border: 1px solid #000000;
+  padding: 10px;
+  width:25%;
+  vertical-align: middle;
+  text-align: center;
+  letter-spacing: 0.2em;
+ 
+}
+
+#info .main-page01 td{
+  border: 1px solid #000000;
+  padding: 10px 10px 10px 20px;
+  line-height: 1.7;
+  vertical-align: middle;
+  
+}
+
+/* 部活動 */
+#info .club{
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start;
+  padding: 30px auto 60px auto;
+  height: 500px;
+  margin: 50px 0 60px 0;
+  /* width:calc(100vw - 25px);
+  margin-left: calc(calc(100vw - 1125px) / -2); */
+}
+#info .wrapper-club{
+  background-color:#f3f3f3;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 60px;
+  width:calc(100vw - 20px);
+  margin-left: calc(calc(100vw - 1120px) / -2);
+}
+.text01{
+  width: 350px;
+  margin-right: 70px;
+  
+}
+.text01 h2{
+  font-size: 30px;
+  color:#707070;
+  padding-top: 20px;
+  margin-bottom: 30px;
+
+}
+.text01 h2::after{
+  content: "";
+  display: block;
+  width: 40px;
+ border-bottom: 3px solid #235910;
+ padding-top: 5px;
+ margin-left: -10px;
+}
+.text01 h3{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.text01 p{
+line-height:2;
+}
+.club img{
+  margin: 50px 40px 50px 0;
+}
+
+.activity h2{
+  font-size: 25px;
+  border-bottom: 3px solid #8DC031;
+  padding: 0 0 10px 10px;
+  color: #707070;
+  margin-bottom: 70px;
+}
+
+.circle01{
+  display: flex;
+  justify-content: center; 
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 70px;
+ 
+}
+.circle01 .team{
+  width: 130px;
+  margin-right: 74px;
+  margin-bottom:40px;
+}
+
+.circle01 .team:last-child{
+  margin-right: 0;
+}
+.circle01 .team:nth-child(5){
+  margin-right: 0;
+}
+.circle01 .team img{
+  margin-bottom: 10px;
+}
+.circle01 .team p{
+ 
+  text-align: center;
+  padding: 10px 0 10px 0;
+
+}
+
+.activity{
+  margin-bottom: 150px;
+  
+}
